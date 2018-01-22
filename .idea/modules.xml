@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ble-lib/ble-lib.iml" filepath="$PROJECT_DIR$/ble-lib/ble-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/blueToothAutoPair/blueToothAutoPair.iml" filepath="$PROJECT_DIR$/blueToothAutoPair/blueToothAutoPair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetooth-library/bluetooth-library.iml" filepath="$PROJECT_DIR$/bluetooth-library/bluetooth-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetoothDemo/bluetoothDemo.iml" filepath="$PROJECT_DIR$/bluetoothDemo/bluetoothDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bthelper/bthelper.iml" filepath="$PROJECT_DIR$/bthelper/bthelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/commom-library/commom-library.iml" filepath="$PROJECT_DIR$/commom-library/commom-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/ocr_ui/ocr_ui.iml" filepath="$PROJECT_DIR$/ocr_ui/ocr_ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/pull_loadmore-library/pull_loadmore-library.iml" filepath="$PROJECT_DIR$/pull_loadmore-library/pull_loadmore-library.iml" />
