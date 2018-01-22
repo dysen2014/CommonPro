@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonPro.iml" filepath="$PROJECT_DIR$/CommonPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OkSocket-library/OkSocket-library.iml" filepath="$PROJECT_DIR$/OkSocket-library/OkSocket-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OkSocketDemo/OkSocketDemo.iml" filepath="$PROJECT_DIR$/OkSocketDemo/OkSocketDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ble-lib/ble-lib.iml" filepath="$PROJECT_DIR$/ble-lib/ble-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blueToothAutoPair/blueToothAutoPair.iml" filepath="$PROJECT_DIR$/blueToothAutoPair/blueToothAutoPair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commom-library/commom-library.iml" filepath="$PROJECT_DIR$/commom-library/commom-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ocr_ui/ocr_ui.iml" filepath="$PROJECT_DIR$/ocr_ui/ocr_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pull_loadmore-library/pull_loadmore-library.iml" filepath="$PROJECT_DIR$/pull_loadmore-library/pull_loadmore-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/status_bar-library/status_bar-library.iml" filepath="$PROJECT_DIR$/status_bar-library/status_bar-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tab_bar-library/tab_bar-library.iml" filepath="$PROJECT_DIR$/tab_bar-library/tab_bar-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zbarscan-library/zbarscan-library.iml" filepath="$PROJECT_DIR$/zbarscan-library/zbarscan-library.iml" />
+    </modules>
+  </component>
+</project>

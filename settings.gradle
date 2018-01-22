@@ -1,0 +1,1 @@
+include ':app', ':blueToothAutoPair', ':commom-library', ':OkSocket-library', ':OkSocketDemo', ':ocr_ui', ':pull_loadmore-library', ':status_bar-library', ':zbarscan-library', ':tab_bar-library', ':ble-lib'

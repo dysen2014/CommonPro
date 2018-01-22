@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/OkSocket-library" />
+            <option value="$PROJECT_DIR$/OkSocketDemo" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ble-lib" />
+            <option value="$PROJECT_DIR$/blueToothAutoPair" />
+            <option value="$PROJECT_DIR$/commom-library" />
+            <option value="$PROJECT_DIR$/ocr_ui" />
+            <option value="$PROJECT_DIR$/pull_loadmore-library" />
+            <option value="$PROJECT_DIR$/status_bar-library" />
+            <option value="$PROJECT_DIR$/tab_bar-library" />
+            <option value="$PROJECT_DIR$/zbarscan-library" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
