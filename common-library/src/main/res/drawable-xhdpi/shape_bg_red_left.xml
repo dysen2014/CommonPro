@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/common_tab_bg" />
+
+    <corners android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"/>
+    <stroke  
+        android:width="0.5dp"  
+        android:color="@color/common_tab_bg" />
+
+</shape>

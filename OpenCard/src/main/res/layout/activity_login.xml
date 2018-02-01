@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg_icon"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.dysen.opencard.OpenCusActivity">
+
+    <include layout="@layout/common_title_layout"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/iv_org_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@mipmap/org_bg"
+                    />
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <ScrollView
+                    android:orientation="vertical"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="60%">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_cus_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:stretchColumns="1">
+
+                                <TableRow
+                                    style="@style/common_tablerow">
+
+                                    <TextView
+                                        style="@style/common_tablerow_text"
+                                        android:text="@string/teller_id"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_teller_id"
+                                        style="@style/common_tablerow_edit"
+                                        android:hint="@string/hint_teller_id"
+                                        />
+                                </TableRow>
+
+                                <TableRow
+                                    style="@style/common_tablerow">
+
+                                    <TextView
+                                        style="@style/common_tablerow_text"
+                                        android:text="@string/org_id"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_org_id"
+                                        style="@style/common_tablerow_edit"
+                                        android:hint="@string/hint_org_id"
+                                        />
+                                </TableRow>
+
+                                <TableRow
+                                    style="@style/common_tablerow">
+
+                                    <TextView
+                                        style="@style/common_tablerow_text"
+                                        android:text="@string/terminal_id"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_terminal_id"
+                                        style="@style/common_tablerow_edit"
+                                        android:hint="@string/hint_terminal_id"
+                                        />
+                                </TableRow>
+
+                                <TableRow
+                                    style="@style/common_tablerow">
+
+                                    <TextView
+                                        style="@style/common_tablerow_text"
+                                        android:text="@string/teller_finger"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_teller_finger"
+                                        style="@style/common_tablerow_edit"
+                                        android:hint="@string/hint_teller_finger"
+                                        />
+                                </TableRow>
+                            </TableLayout>
+
+                            <android.support.percent.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                >
+
+                                <Button
+                                    android:id="@+id/btn_read_finger"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@mipmap/btn_bg_red"
+                                    android:gravity="center"
+                                    android:text="@string/read_finger"
+                                    android:textColor="#fff"
+                                    app:layout_widthPercent="45%"
+                                    />
+
+                                <Button
+                                    android:id="@+id/btn_teller_login"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@mipmap/btn_bg_red"
+                                    android:gravity="center"
+                                    android:text="@string/teller_login"
+                                    android:textColor="#fff"
+                                    app:layout_widthPercent="45%"
+                                    />
+                            </android.support.percent.PercentRelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/fragment_progress_dialog"/>
+    </FrameLayout>
+
+</LinearLayout>

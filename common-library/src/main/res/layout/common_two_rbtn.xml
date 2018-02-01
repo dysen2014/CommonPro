@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/archive_public_sub_title"
+    style="@style/common_lay"
+    android:layout_height="48dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        style="@style/common_view"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgp_check_cus"
+        style="@style/common_view_rbtn_group"
+        android:layout_weight="4"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtn_0"
+            style="@style/common_view_rbtn"
+            android:background="@drawable/rbtn_warn_personal"
+            android:checked="true"
+            android:text="个人"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_1"
+            style="@style/common_view_rbtn"
+            android:background="@drawable/rbtn_warn_commonality"
+            android:text="对公"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        style="@style/common_view"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

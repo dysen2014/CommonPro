@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_view_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ea452f"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/lay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:saveEnabled="false"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:src="@drawable/ic_left"
+                />
+
+            <TextView
+                android:id="@+id/txt_back"
+                style="@style/common_title_txt"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="返回"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/common_title_txt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_"
+            style="@style/common_title_txt"
+            android:layout_width="96dp"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_idcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:visibility="gone"
+    >
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_widthPercent="80%">
+
+
+            <ScrollView
+                android:id="@+id/scllowview_read_idcard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/IDCardFieldTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:gravity="right"
+                            android:text="姓名:"/>
+
+                        <EditText
+                            android:id="@+id/edit_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/com_input_bg"
+                            android:enabled="true"
+                            android:hint="姓名"
+                            android:paddingLeft="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/IDCardFieldTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:gravity="right"
+                            android:text="证件号码:"/>
+
+                        <EditText
+                            android:id="@+id/edit_id"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/com_input_bg"
+                            android:enabled="true"
+                            android:hint="身份证号码"
+                            android:paddingLeft="5dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/IDCardFieldTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:gravity="right"
+                            android:text="民族:"/>
+
+                        <EditText
+                            android:id="@+id/edit_type"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/com_input_bg"
+                            android:enabled="true"
+                            android:hint="民族"
+                            android:paddingLeft="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/IDCardFieldTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:gravity="right"
+                            android:text="家庭住址:"/>
+
+                        <EditText
+                            android:id="@+id/edit_address"
+                            style="@style/common_right_txt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/com_input_bg"
+                            android:enabled="true"
+                            android:hint="住址信息"
+                            android:paddingLeft="5dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/IDCardFieldTitle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.0"
+                                android:gravity="right"
+                                android:text="性别："/>
+
+                            <EditText
+                                android:id="@+id/edit_sex"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:enabled="true"
+                                android:hint="性别"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/IDCardFieldTitle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.0"
+                                android:gravity="right"
+                                android:text="出生年月："/>
+
+                            <EditText
+                                android:id="@+id/edit_date"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:enabled="true"
+                                android:hint="出生年月"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/layout_create"
+                            style="@style/IDCardFieldTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/IDCardFieldTitle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.0"
+                                android:gravity="right"
+                                android:text="签发机关："/>
+
+                            <EditText
+                                android:id="@+id/edit_create"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:enabled="true"
+                                android:hint="签发机关"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_limit_date_start"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/IDCardFieldTitle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.0"
+                                android:gravity="right"
+                                android:text="有效日期\n(开始)："/>
+
+                            <EditText
+                                android:id="@+id/edit_limit_date_start"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:enabled="true"
+                                android:hint="有效日期(开始)"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_limit_date_end"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/IDCardFieldTitle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.0"
+                                android:gravity="right"
+                                android:text="有效日期\n(结束)："/>
+
+                            <EditText
+                                android:id="@+id/edit_limit_date_end"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:enabled="true"
+                                android:hint="有效日期(结束)"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_get_idcard_photo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_red_selector"
+                            android:text="重新识别"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/btn_ok"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_red_selector"
+                            android:text="确认"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.dysen.common_res.common.views.uber.UberProgressView
+        android:id="@+id/uber_pgsview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:fading_circle_color="@android:color/holo_blue_dark"
+        app:stationary_circle_color="@android:color/holo_blue_dark"
+        app:orbiting_circle_color="@android:color/holo_blue_dark"
+        app:direction="counterclockwise"
+        app:orbiting_circle_radius="6dp"
+        app:stationary_circle_radius="12dp"
+        tools:targetApi="ice_cream_sandwich"
+        />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_scan_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/gallery_button_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="相册选择 正面"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gallery_button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="相册选择 反面"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/id_card_front_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证正面"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/id_card_front_button_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证正面(本地质量控制)"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/id_card_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证反面"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/id_card_back_button_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证反面(本地质量控制)"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

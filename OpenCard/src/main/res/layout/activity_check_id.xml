@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout"/>
+
+    <FrameLayout
+        android:id="@+id/fl_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_processing"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            />
+    <com.dysen.commom_library.views.UberProgressView
+        android:id="@+id/uber"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fading_circle_color="@android:color/holo_blue_dark"
+        app:stationary_circle_color="@android:color/holo_blue_dark"
+        app:orbiting_circle_color="@android:color/holo_blue_dark"
+        app:direction="counterclockwise"
+        app:orbiting_circle_radius="6dp"
+        app:stationary_circle_radius="12dp"/>
+</FrameLayout>
+</LinearLayout>

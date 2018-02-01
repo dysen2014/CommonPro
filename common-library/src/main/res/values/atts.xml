@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--item attrs-->
+    <declare-styleable name="ItemAttrs">
+
+        <attr name="text_size" format="integer"/>
+        <attr name="text_color" format="color"/>
+        <attr name="icon_margin_left" format="integer"/>
+        <attr name="icon_text_margin" format="integer"/>
+        <attr name="margin_right" format="integer"/>
+        <attr name="item_height" format="integer"/>
+        <attr name="line_color" format="color"/>
+
+        <attr name="right_text_size" format="integer"/>
+        <attr name="right_text_color" format="color"/>
+        <attr name="right_text_margin" format="integer"/>
+    </declare-styleable>
+
+    <!--dialog-->
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color"/>
+        <attr name="DialogSpotCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFont">
+        <attr name="fontFamily" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandingItem">
+        <attr name="item_layout" format="reference"/>
+        <attr name="sub_item_layout" format="reference"/>
+        <attr name="separator_layout" format="reference"/>
+        <attr name="indicator_size" format="dimension"/>
+        <attr name="indicator_margin_left" format="dimension"/>
+        <attr name="indicator_margin_right" format="dimension"/>
+        <attr name="show_indicator" format="boolean"/>
+        <attr name="show_animation" format="boolean"/>
+        <attr name="start_collapsed" format="boolean"/>
+        <attr name="animation_duration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="UberProgressView">
+        <attr name="stationary_circle_radius" format="dimension" />
+        <attr name="orbiting_circle_radius" format="dimension" />
+        <attr name="stationary_circle_color" format="color" />
+        <attr name="fading_circle_color" format="color" />
+        <attr name="orbiting_circle_color" format="color" />
+        <attr name="animation_time" format="integer" />
+        <attr name="direction" format="enum">
+            <enum name="clockwise" value="0"/>
+            <enum name="counterclockwise" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--rtl_RecyclerTabLayout-->
+    <declare-styleable name="rtl_RecyclerTabLayout">
+        <attr name="rtl_tabIndicatorColor" format="color"/>
+        <attr name="rtl_tabIndicatorHeight" format="dimension"/>
+
+        <attr name="rtl_tabBackground" format="reference"/>
+
+        <attr name="rtl_tabTextAppearance" format="reference"/>
+        <attr name="rtl_tabSelectedTextColor" format="color"/>
+
+        <attr name="rtl_tabOnScreenLimit" format="integer"/>
+        <attr name="rtl_tabMinWidth" format="dimension"/>
+        <attr name="rtl_tabMaxWidth" format="dimension"/>
+
+        <attr name="rtl_tabPaddingStart" format="dimension"/>
+        <attr name="rtl_tabPaddingTop" format="dimension"/>
+        <attr name="rtl_tabPaddingEnd" format="dimension"/>
+        <attr name="rtl_tabPaddingBottom" format="dimension"/>
+        <attr name="rtl_tabPadding" format="dimension"/>
+
+        <attr name="rtl_scrollEnabled" format="boolean"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="90%"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll_cus_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:stretchColumns="1">
+
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/sign_account"/>
+
+                            <EditText
+                                android:id="@+id/cardNumber"
+                                style="@style/common_tablerow_edit"
+                                android:hint=""
+                                />
+
+                            <Button
+                                android:id="@+id/read_card"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="128dp"
+                                android:layout_height="48dp"
+                                android:src="@color/aquamarine"
+                                android:text=""
+                                android:visibility="invisible"
+                                android:background="@drawable/shape"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/sign_card_number"/>
+
+                            <EditText
+                                android:id="@+id/old_card_password"
+                                style="@style/common_tablerow_edit"
+                                android:hint=""
+                                />
+
+                            <Button
+                                android:id="@+id/read_old_card_password"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="128dp"
+                                android:layout_height="48dp"
+                                android:src="@color/aquamarine"
+                                android:text="@string/read_card"
+                                android:background="@drawable/shape"/>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/hint_password"/>
+
+                            <EditText
+                                android:id="@+id/new_card_password"
+                                style="@style/common_tablerow_edit"
+                                android:hint=""
+                                />
+
+                            <Button
+                                android:id="@+id/read_new_card_password"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="128dp"
+                                android:layout_height="48dp"
+                                android:src="@color/aquamarine"
+                                android:text="@string/read_pwd"
+                                android:background="@drawable/shape"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:theme="@style/AlertDialog.AppCompat"
+                        android:layout_marginTop="30dp"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_search"
+                            app:layout_widthPercent="45%"
+                            android:layout_height="48dp"
+                            android:background="@mipmap/btn_bg_red"
+                            android:gravity="center"
+                            android:text="@string/select"
+                            android:textColor="#fff"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"/>
+
+                    </android.support.percent.PercentRelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_serach_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:stretchColumns="1">
+
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/user_name"/>
+
+                            <EditText
+                                android:id="@+id/userName"
+                                style="@style/common_tablerow_edit"
+                                android:hint="批量四"
+                                />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certType"
+                                />
+
+                            <LinearLayout
+                                style="@style/common_lay_bg">
+
+                                <Spinner
+                                    android:id="@+id/certType"
+                                    style="@style/common_rate_edit"
+                                    />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certNumber"/>
+
+                            <EditText
+                                android:id="@+id/certNumber"
+                                style="@style/common_tablerow_edit"
+                                android:hint=""
+                                />
+
+                            <Button
+                                android:id="@+id/btn_readCert"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="128dp"
+                                android:layout_height="48dp"
+                                android:src="@color/aquamarine"
+                                android:text="@string/readCert"
+                                android:background="@drawable/shape"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:theme="@style/AlertDialog.AppCompat"
+                        android:layout_marginTop="40dp"
+                        >
+
+                        <Button
+                            android:id="@+id/submit"
+                            app:layout_widthPercent="45%"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="48dp"
+                            android:background="@mipmap/btn_bg_red"
+                            android:gravity="center"
+                            android:text="@string/submit_btn"
+                            android:textColor="#fff"
+                            />
+                        <Button
+                            android:id="@+id/cancel"
+                            app:layout_widthPercent="45%"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="48dp"
+                            android:background="@mipmap/btn_bg_red"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="#fff"
+                            />
+                    </android.support.percent.PercentRelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uber_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dysen.commom_library.views.UberProgressView
+        android:id="@+id/uber"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:fading_circle_color="@android:color/holo_blue_dark"
+        app:stationary_circle_color="@android:color/holo_blue_dark"
+        app:orbiting_circle_color="@android:color/holo_blue_dark"
+        app:direction="counterclockwise"
+        app:orbiting_circle_radius="6dp"
+        app:stationary_circle_radius="12dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

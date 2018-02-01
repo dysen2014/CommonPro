@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape"
+    android:padding="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TableRow
+                style="@style/common_tablerow"
+                android:layout_width="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    style="@style/common_tablerow_text"
+                    android:text="@string/authorize_teller_num"/>
+
+                <EditText
+                    android:id="@+id/edt_teller_id"
+                    style="@style/common_tablerow_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_authorize_teller_num"
+                    />
+
+            </TableRow>
+                <Button
+                    android:id="@+id/btn_read_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@color/aquamarine"
+                    android:background="@drawable/shape"
+                    android:text="@string/read_finger"/>
+
+            <TextView
+                android:id="@+id/tv_read_finger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_tick"
+                android:text="@string/read_finger_success"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/common_horizontal_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_check_finger"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/check_finger"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:text="@string/submit"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/common_horizontal_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_teller_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="@string/teller_claim"
+                    android:textColor="@color/common_tab_bg"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_authorize_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/authorize_code"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_authorize_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/authorize_info"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/authorize_f100"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_activation_authorize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/activation_authorize"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

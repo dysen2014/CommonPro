@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="800dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tab_0"
+                style="@style/common_tab_bar"
+                android:layout_width="wrap_content"
+                android:text="申请信息"/>
+
+            <TextView
+                android:id="@+id/tab_1"
+                style="@style/common_tab_bar"
+                android:layout_width="wrap_content"
+                android:text="客户信息"/>
+
+            <TextView
+                android:id="@+id/tab_2"
+                style="@style/common_tab_bar"
+                android:layout_width="wrap_content"
+                android:text="担保信息"/>
+
+            <TextView
+                android:id="@+id/tab_3"
+                style="@style/common_tab_bar"
+                android:layout_width="wrap_content"
+                android:text="调查报告"/>
+
+            <TextView
+                android:id="@+id/tab_4"
+                style="@style/common_tab_bar"
+                android:layout_width="wrap_content"
+                android:text="处理意见"/>
+    </LinearLayout>
+</LinearLayout>

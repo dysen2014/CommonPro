@@ -4,7 +4,7 @@
             "outputFile": "D:\\dysen\\Android\\AS_Test\\Code_Test\\CommonPro\\ocr_ui\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dysen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\bcd69ade702ef6b0fbc4a34a6103f0b4\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\dysen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\d93cfb23501915929530ee1202067517\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dysen\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\66b43c7ee04f196d05317950a242137e\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\dysen\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\735654ea7af5a74f5083ea5890a74174\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

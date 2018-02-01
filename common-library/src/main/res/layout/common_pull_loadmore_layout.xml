@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.dysen.pullloadmore_recyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/pull_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_hide_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="无数据内容"
+            android:textSize="30sp"
+            android:visibility="invisible"/>
+
+        <com.dysen.common_res.common.views.uber.UberProgressView
+            android:id="@+id/uber_pgsview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fading_circle_color="@android:color/holo_blue_dark"
+            app:stationary_circle_color="@android:color/holo_blue_dark"
+            app:orbiting_circle_color="@android:color/holo_blue_dark"
+            app:direction="counterclockwise"
+            app:orbiting_circle_radius="6dp"
+            app:stationary_circle_radius="12dp"/>
+    </FrameLayout>
+</LinearLayout>

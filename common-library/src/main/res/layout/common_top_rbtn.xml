@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/archive_public_sub_title"
+    style="@style/common_lay"
+    android:background="@color/common_tab_bg"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/common_view"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgp_check_cus"
+            style="@style/common_view_rbtn_group"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_line_white"
+            android:layout_weight="4"
+            >
+
+            <RadioButton
+                android:id="@+id/rbtn_0"
+                style="@style/common_view_rbtn"
+                android:layout_height="40dp"
+                android:background="@drawable/rbt_bg_selector_left"
+                android:checked="true"
+                android:textColor="@color/common_tab_bg"
+                android:text="个人"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn_1"
+                style="@style/common_view_rbtn"
+                android:layout_height="40dp"
+                android:background="@drawable/rbt_bg_selector_right"
+                android:textColor="@color/white"
+                android:text="对公"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            style="@style/common_view"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cert_type">
+        <item>01:居民身份证</item>
+        <item>02:临时身份证</item>
+        <item>03:护照</item>
+        <item>04:户口本</item>
+        <item>05:军人身份证</item>
+        <item>06:武装警察身份证</item>
+        <item>07:港澳台居民往来内地通</item>
+        <item>08:外交人员身份证</item>
+        <item>09:外国人居留许可证</item>
+        <item>10:边民出入境通行证</item>
+        <item>11:个人其他证件</item>
+    </string-array>
+    <string-array name="a">
+    </string-array>
+    <string-array name="professional_code">
+        <item>01:高级管理者</item>
+        <item>02:专业技术人员</item>
+        <item>03:国家机关、党群组织、企业、事业单位负责人</item>
+        <item>04:半专业人员</item>
+        <item>05:办事人员和有关人员</item>
+        <item>06:军人</item>
+        <item>07:技术工人</item>
+        <item>08:建筑贸易</item>
+        <item>09:司机</item>
+        <item>10:工厂工人</item>
+        <item>11:保安</item>
+        <item>12:军队一应征入伍的士兵</item>
+        <item>13:销售</item>
+        <item>14:自由职业者/个体户</item>
+        <item>15:商业，服务业人员</item>
+        <item>16:非技术工人</item>
+        <item>17:退休</item>
+        <item>18:家庭主妇</item>
+        <item>19:学生</item>
+        <item>20:待业</item>
+        <item>21:农，林，牧，渔，水利业生产人员</item>
+        <item>22:生产，运输设备操作人员及有关人员</item>
+        <item>23:不便分类的其他人员</item>
+        <item>24:不便分类的其他从业人员</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>1-I类户</item>
+        <item>2-II类户</item>
+    </string-array>
+    <string-array name="account_type_product">
+        <item>1101-个人活期结算账户</item><!--(为持卡开户默认值)-->
+        <item>1103-个人2类账户存款</item><!--新增-->
+        <item>1132-人民币个人普通卡活期结算账户</item>
+        <item>1152-个人定期一卡通存款账户</item>
+        <item>1203-单位专用账户</item>
+    </string-array>
+
+    <string-array name="product_child0">
+        <item>0101-人民币个人普通卡活期结算账户</item>
+    </string-array>
+
+    <string-array name="product_child1">
+        <item>0101-2类户标准卡账户</item>><!---新增-->
+    </string-array>
+    <string-array name="product_child2">
+        <item>0112-人民币个人卡零存整取1年期存款账户</item>
+        <item>0136-人民币个人卡零存整取3年期存款账户</item>
+        <item>0160-人民币个人卡零存整取5年期存款账户</item>
+    </string-array>
+    <string-array name="product_child3">
+        <item>0001-个人定期一卡通存款账户</item>
+    </string-array>
+    <string-array name="product_child4">
+        <item>0101-单位银行卡专用账户</item>
+    </string-array>
+    <string-array name="product_child">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

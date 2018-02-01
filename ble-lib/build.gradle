@@ -22,13 +22,14 @@ android {
 }
 
 dependencies {
-    //    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/OutputUtil.jar')
-    compile files('libs/siecom.jar')
-    compile files('libs/sdsesInterface.jar')
-    compile files('libs/d2xx.jar')
-    compile files('libs/MPrintLib_Release.jar')
-    compile files('libs/AndroidPrinterSDK2.2.jar')
-    compile files('libs/SDSES_WltNoLic_1.2.jar')
-    compile files('libs/geitCj1000_1.0.2.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //    backClip
+    implementation files('libs/OutputUtil.jar')
+    implementation files('libs/siecom.jar')
+    implementation files('libs/sdsesInterface.jar')
+    implementation files('libs/d2xx.jar')
+    implementation files('libs/MPrintLib_Release.jar')
+    implementation files('libs/AndroidPrinterSDK2.2.jar')
+    implementation files('libs/SDSES_WltNoLic_1.2.jar')
+    implementation files('libs/geitCj1000_1.0.2.jar')
 }

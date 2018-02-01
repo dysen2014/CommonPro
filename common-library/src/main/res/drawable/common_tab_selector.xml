@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--选中时的效果-->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- 红色背景 -->
+            <item>
+                <color android:color="@color/common_tab_bg"/>
+            </item>
+            <!-- 白色背景 -->
+            <item android:bottom="4dp"
+                  android:drawable="@android:color/white"/>
+        </layer-list>
+    </item>
+
+    <!--默认时的效果-->
+    <item>
+        <layer-list>
+            <!--红色背景-->
+            <item>
+                <color android:color="@color/common_tab_bg"/>
+            </item>
+            <!-- 白色背景 -->
+            <item android:bottom="1dp" android:drawable="@android:color/white"/>
+        </layer-list>
+    </item>
+
+</selector>

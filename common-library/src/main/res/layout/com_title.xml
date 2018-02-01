@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nowworkplacebg"
+    android:orientation="vertical"
+    android:weightSum="115" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="115"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/topbgaaa" >
+
+            <ImageView
+                android:id="@+id/com_img_back"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="2dp"
+                android:src="@drawable/workplaceback" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" >
+
+                    <ImageView
+                        android:id="@+id/com_title_img"
+                        android:layout_width="96dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/workplacesmallicon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/separateline" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="16dp"
+                        android:padding="1dp"
+                        android:src="@drawable/workplaceadmin" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <com.dysen.common_res.common.views.TextViewMarquee
+                            android:id="@+id/com_tv_adminname"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom|center_horizontal"
+                            android:singleLine="true"
+                            android:text="Admin"
+                            android:textColor="@color/wordbgcolor"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/com_tv_out"
+                            android:layout_width="129dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.94"
+                            android:gravity="center"
+                            android:text="退出"
+                            android:textColor="@color/wordbgcolor1"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

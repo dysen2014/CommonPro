@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dysen.opencard.OpenCusActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="90%"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll_cus_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:stretchColumns="1">
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/customerName"
+                                />
+
+                            <EditText
+                                android:id="@+id/customerName"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_cus_name"
+                                android:focusable="false"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_ocr"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:visibility="gone"/>
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/cus_sex"
+                                />
+
+                            <RadioGroup
+                                android:layout_width="128dp"
+                                android:orientation="horizontal"
+                                android:focusable="false">
+                                <RadioButton
+                                    android:id="@+id/rbt_0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="男"/>
+                                <RadioButton
+                                    android:id="@+id/rbt_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="女"/>
+                            </RadioGroup>
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certType"
+                                />
+
+                            <LinearLayout
+                                style="@style/common_lay_bg">
+
+                                <Spinner
+                                    android:id="@+id/certType"
+                                    style="@style/common_rate_edit"
+                                    android:focusable="false"
+                                    />
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certNumber"/>
+
+                            <EditText
+                                android:id="@+id/certNumber"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_cert_num"
+                                android:focusable="false"
+                                />
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certIssuedStart"/>
+
+                            <EditText
+                                android:id="@+id/cert_issued_start"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_cert_issued_start"
+                                android:focusable="false"
+                                />
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/certIssuedEnd"/>
+
+                            <EditText
+                                android:id="@+id/cert_issued_end"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_cert_issued_end"
+                                android:focusable="false"
+                                />
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/cus_add"
+                                />
+
+                            <LinearLayout
+                                style="@style/common_lay_bg">
+
+                                <Spinner
+                                    android:id="@+id/country"
+                                    style="@style/common_rate_edit"
+                                    />
+                                <Spinner
+                                android:id="@+id/province"
+                                style="@style/common_rate_edit"
+                                />
+                                <Spinner
+                                android:id="@+id/county"
+                                style="@style/common_rate_edit"
+                                />
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/cus_add_info"/>
+
+                            <EditText
+                                android:id="@+id/cus_add_info"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_cus_add_info"
+                                android:maxLength="120"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/telephone_um"/>
+
+                            <EditText
+                                android:id="@+id/edt_telephone"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_telephone_num"
+                                android:maxLength="11"
+                                android:inputType="phone"
+                                />
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/postal_code"/>
+
+                            <EditText
+                                android:id="@+id/edt_postal_code"
+                                style="@style/common_tablerow_edit"
+                                android:hint="@string/hint_postal_code"
+                                android:maxLength="8"
+                                android:inputType="number"
+                                />
+                        </TableRow>
+                        <TableRow
+                            style="@style/common_tablerow">
+
+                            <TextView
+                                style="@style/common_tablerow_text"
+                                android:text="@string/professional_code"
+                                />
+
+                            <LinearLayout
+                                style="@style/common_lay_bg">
+
+                                <Spinner
+                                    android:id="@+id/professional_code"
+                                    style="@style/common_rate_edit"
+                                    />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:theme="@style/AlertDialog.AppCompat"
+                        android:layout_marginTop="40dp"
+                        >
+
+                        <Button
+                            android:id="@+id/submit"
+                            app:layout_widthPercent="45%"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="48dp"
+                            android:background="@mipmap/btn_bg_red"
+                            android:gravity="center"
+                            android:text="@string/submit"
+                            android:textColor="#fff"
+                            />
+                        <Button
+                            android:id="@+id/cancel"
+                            app:layout_widthPercent="45%"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="48dp"
+                            android:background="@mipmap/btn_bg_red"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="#fff"
+                            />
+                    </android.support.percent.PercentRelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

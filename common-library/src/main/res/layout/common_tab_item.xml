@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rb_tab"
+        android:layout_height="48dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:background="@drawable/tab_bg_selector"
+        android:gravity="center"
+        android:text="mood"
+        android:textColor="@android:color/darker_gray"
+        app:layout_widthPercent="25%"/>
+
+</android.support.percent.PercentRelativeLayout>
